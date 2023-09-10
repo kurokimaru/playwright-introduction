@@ -1,0 +1,11 @@
+version: "3.7"
+services: 
+  tests:
+    build: 
+      context: ./
+    volumes:
+    - ./:/app
+    - /app/node_modules
+    ports:
+      - "9323:9323"
+    tty: true
